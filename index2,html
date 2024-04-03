@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr-Code Generator</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="image" src="./Screenshot 2023-12-05 171344.png" alt="IndiaSis"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link " aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="text-bg-primary me-md-0 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Qr Code Generator</h2>
+        <p class="lead">Generate, Download, Share and Save  Any Qr</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img class="qr" src="data:image/png;base64,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">
+      </div>
+    </div>
+
+    <form class="url">
+      <div class="mt-5">
+      <h1 class="h3 mb-3 fw-normal">Enter Url</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">URL INPUT</label>
+      </div>
+      
+  
+      
+      <button class="btn btn-primary mt-1 w-100 py-2" type="submit">Submit URL</button>
+      <p class="mt-3 mb-3 text-body-secondary">© IndiaSis</p>
+      </div>
+    </form>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img class="qrimage" src="https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/assets/media/images/startpage/v2/hand-qrcodes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450" height="600" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I’m new to QR Codes. What should I know?</h1>
+          <p class="lead">Glad you asked! Here’s a few basics to get you started.</p>
+    <div class="dropdown">
+      <ul class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 border-0 shadow w-150px" data-bs-theme="dark">
+        <div class="dropdown-1">
+        <button class="btn-d">What is a Qr Code?</button>
+        <div class="dropdown-btn">
+          <p class="dropdown-text">QR Code is a two-dimensional version of the barcode, typically made up of black and white pixel patterns. Denso Wave, a Japanese subsidiary of the Toyota supplier Denso, developed them for marking components in order to accelerate logistics processes for their automobile production. Now, it has found its way into mobile marketing with the widespread adoption of smartphones. "QR" stands for "Quick Response", which refers to the instant access to the information hidden in the Code.</p>
+        </div>
+      </div>
+      <div class="dropdown-1">
+        <button class="btn-d">What are the Benefits of using a Qr Code?</button>
+        <div class="dropdown-btn">
+          <p class="dropdown-text">They are gaining popularity because of their versatility. You can use them to gather feedback to improve your products or services, increase customer engagement with images or videos, or even promote your business via events and coupons. All of these can be done with just a single scan!</p>
+        </div>
+      </div>
+      <div class="dropdown-1">
+        <button class="btn-d">How do I Scan a QR Code</button>
+        <div class="dropdown-btn">
+          <p class="dropdown-text">Depending on your device, you might already have a built-in QR Code reader or scanner. Open the camera app on your mobile phone and hold it over a Code for a few seconds until a notification pops up. If this doesn’t happen, check your settings and see if QR Code scanning is enabled. Still not working? Don’t worry, all you have to do now is install third-party QR Code readers from your app stores.</p>
+          <a class="link-qr" href="https://www.qr-code-generator.com/guides/scan-qr-code-android/">I am an Android User</a>
+          <a class="link-qr" href="https://www.qr-code-generator.com/guides/scan-qr-code-ios/">I am an IOS User</a>
+        </div>
+      </div>
+
+        <!--<li><a class="dropdown-item rounded-2 active" >What Is a Qr Code</a></li>
+        <li><a class="dropdown-item rounded-2" href="#">Another action</a></li>
+        <li><a class="dropdown-item rounded-2" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item rounded-2" href="#">Separated link</a></li>-->
+      </ul>
+    </div>
+
+
+
+
+   
+    <!--<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+    </div>-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<div class="col-md-4 d-flex align-items-center">
+  <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+  </a>
+  <span class="mb-3 mb-md-0 Company text-body-secondary">© IndiaSis Pvt. Ltd.</span>
+</div>
+
+<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+  <li class="ms-3"><a class=" icon2 text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+  </svg></a></li>
+  <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+  </svg></a></li>
+  <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+  </svg></a></li>
+</ul>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
